@@ -145,10 +145,8 @@ a{
     line-height: 32px;
     border-radius: 5px;
 }
-.button:hover{
-    border-color: #ed1c24;
-    color: #ffffff;
-}
+
+
 .button {
     position: relative;
     display: inline-block;
@@ -157,7 +155,7 @@ a{
     padding: 12px 28px;
     line-height: normal;
     color: #fff;
-    background-color: #000000;
+    background-color: #ed1c24;
     border: 1px solid #000000;
     font-size: 13px;
     font-weight: 500;
@@ -183,4 +181,43 @@ a{
     height: 34px;
     line-height: 32px;
     border-radius: 5px;
+}
+.button:before {
+    content: '';
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    left: -2px;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.product-loop .proloop-actions__inner .button.btn-proloop-checkout:before {
+    background-color: #fff;
+}
+.product-loop .proloop-actions__inner .button.btn-proloop-checkout:not(:hover) {
+    color:#000000;
+}
+.product-loop .proloop-actions__inner .button.btn-proloop-checkout {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button:hover, .button:focus {
+    border-color: #ed1c24;
+    color: #ffffff;
 }
