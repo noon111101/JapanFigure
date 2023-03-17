@@ -2,18 +2,15 @@
   <div>
     <div class="container">
       <navbar-default/>
-      //Breadcrumb
       <el-breadcrumb class="mt-3 mb-3 " style="background: transparent" separator="/">
         <el-breadcrumb-item :to="{ path: '/' }">Trang chủ</el-breadcrumb-item>
         <el-breadcrumb-item :to="{ path: '/collections/all' }">Danh mục</el-breadcrumb-item>
         <el-breadcrumb-item>{{type}}</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
-    //Banner
     <div class="mb-4">
       <img  v-bind:src="'/src/assets/img/' + type + '.jpg'">
     </div>
-    //Filter
     <div class="filter container">
       <div class="row">
         <div class="col-md-9 col-sm-12 col-xs-12">
@@ -34,13 +31,12 @@
     </div>
     <div class="collection-listproduct" id="collection-body">
     <div class="container">
-      <div class="wraplist-collection ">
+      <div class="wraplist-collection">
         <div class="row">
           <div class="col-md-3 col-sm-4 col-xs-6">
-            <div class="product-inner product-resize fixheight" style="height: 420px;">
-              <div class="proloop-image ">
-                <div class="product--image image-resize" style="height: 344px;">
-                  <div class="product--image__inner">
+            <div class="product-inner" style="height: 420px;">
+              <div class="proloop-image" @mouseover="isShow=true" @mouseleave="isShow=false">
+                <div class="product--image" style="height: 344px;">
                     <div class="prod-img first-image">
                       <picture>
                         <source media="(max-width: 480px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_medium.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_medium.jpg">
@@ -48,26 +44,29 @@
                         <img class="img-loop lazyloaded" data-src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg" src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg" alt=" One and Only &quot; SLAM DUNK &quot; Hanamichi Sakuragi ">
                       </picture>
                     </div>
-                    <div class="prod-img second-image hovered-img hidden-xs">
+                    <div class="prod-img second-image hovered-img ">
                       <picture>
                         <source media="(max-width: 480px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_small.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_small.jpg">
                         <source media="(min-width: 481px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg">
                         <img class="img-loop lazyloaded" data-src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg" src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg" alt=" One and Only &quot; SLAM DUNK &quot; Hanamichi Sakuragi ">
                       </picture>
                     </div>
-
-                  </div>
                 </div>
                 <a href="/products/one-and-only-slam-dunk-hanamichi-sakuragi" class="proloop-link  quickview-product " data-handle="/products/one-and-only-slam-dunk-hanamichi-sakuragi" title="One and Only "></a>
               </div>
-              <div class="proloop-detail">
-                <h3><a href="/products/one-and-only-slam-dunk-hanamichi-sakuragi" class=" quickview-product " data-handle="/products/one-and-only-slam-dunk-hanamichi-sakuragi">One and Only " SLAM DUNK " Hanamichi Sakuragi</a></h3>
-                <p class="proloop--price">
-                  <span class="price">2,100,000₫</span>
 
+
+              <div class="proloop-detail"
+              >
+                <h3>
+                  <a class="title title-detail" href="/products/one-and-only-slam-dunk-hanamichi-sakuragi">One and Only " SLAM DUNK " Hanamichi Sakuragi</a>
+                </h3>
+                <p class="proloop--price">
+                  <span class="price fw-bold title">2,100,000₫</span>
                 </p>
               </div>
-              <div class="proloop-actions">
+
+              <div v-show="isShow" class="proloop-actions">
                 <div class="proloop-actions__inner">
                   <div class="actions-primary">
                     <button type="submit" class="button btn-proloop-cart add-to-cart " onclick="HRT.All.addCartProdItem('1089834681')" title="Thêm vào giỏ">
@@ -93,6 +92,44 @@
 
                 </div>
               </div>
+
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="product-inner" style="height: 420px;">
+              <div class="proloop-image" >
+                <div class="product--image" style="height: 344px;">
+                  <div class="prod-img first-image">
+                    <picture>
+                      <source media="(max-width: 480px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_medium.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_medium.jpg">
+                      <source media="(min-width: 481px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg">
+                      <img class="img-loop lazyloaded" data-src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg" src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg" alt=" One and Only &quot; SLAM DUNK &quot; Hanamichi Sakuragi ">
+                    </picture>
+                  </div>
+                  <div class="prod-img second-image hovered-img ">
+                    <picture>
+                      <source media="(max-width: 480px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_small.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_small.jpg">
+                      <source media="(min-width: 481px)" data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg" srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg">
+                      <img class="img-loop lazyloaded" data-src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg" src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg" alt=" One and Only &quot; SLAM DUNK &quot; Hanamichi Sakuragi ">
+                    </picture>
+                  </div>
+                </div>
+                <a href="/products/one-and-only-slam-dunk-hanamichi-sakuragi" class="proloop-link  quickview-product " data-handle="/products/one-and-only-slam-dunk-hanamichi-sakuragi" title="One and Only "></a>
+              </div>
+
+
+              <div class="proloop-detail">
+                <h3>
+                  <a class="title title-detail" href="/products/one-and-only-slam-dunk-hanamichi-sakuragi">One and Only " SLAM DUNK " Hanamichi Sakuragi</a>
+                </h3>
+                <p class="proloop--price">
+                  <span class="price fw-bold title">2,100,000₫</span>
+                </p>
+              </div>
+
+
+
+
             </div>
           </div>
         </div>
@@ -104,6 +141,7 @@
 
 <script>
 import NavbarDefault from "@/examples/navbars/NavbarDefault.vue";
+import { ref } from "vue";
 
 export default {
   name: "collection",
@@ -111,6 +149,7 @@ export default {
   data() {
     return {
       type: null,
+      isShow : ref(false)
     }
   },
   methods:{
@@ -124,10 +163,5 @@ export default {
 </script>
 
 <style scoped>
-.dropdownbox{
-  height: 36px;
-  width: 220px;
-  padding-left: unset;
-  padding-right: unset;
-}
+@import "../../../../../assets/css/collection.css";
 </style>
