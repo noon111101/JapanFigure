@@ -2,12 +2,11 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
-
 // Nucleo Icons
 import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 import BootstrapVue3 from 'bootstrap-vue-3'
-
+import 'bootstrap-icons/font/bootstrap-icons.css'
 // Since every component imports their Bootstrap functionality,
 // the following line is not necessary:
 // import 'bootstrap'
