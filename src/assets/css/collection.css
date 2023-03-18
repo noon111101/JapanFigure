@@ -2,10 +2,24 @@
     color: black;
 }
 .dropdownbox{
-    height: 36px;
     width: 220px;
-    padding-left: unset;
-    padding-right: unset;
+    position: relative;
+    height: 38px;
+    line-height: 36px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 40px 0px 10px;
+    cursor: pointer;
+    border: 1px solid #e7e7e7;
+    border-radius: 0;
+}
+.wrapper-mainCollection .collection-sortby-filter .layered_filter_title .title_filter .icon-filter {
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: top;
+    color: #333;
+    margin-right: 6px;
 }
 .title-detail{
     white-space: initial;
@@ -192,14 +206,9 @@ a{
     right: -2px;
     bottom: 0;
     z-index: -1;
-    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
-    -webkit-transform-origin: left center;
     transform-origin: left center;
-    -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .product-loop .proloop-actions__inner .button.btn-proloop-checkout:before {
     background-color: #fff;
@@ -220,4 +229,20 @@ a{
 .button:hover, .button:focus {
     border-color: #ed1c24;
     color: #ffffff;
+}
+.button:hover:before{
+    left: 100%;
+}
+.product-loop .proloop-actions__inner .button .btnico svg {
+    fill: #ffffff;
+    width: 16px;
+    height: 30px;
+    display: block;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+.product-loop .proloop-actions__inner .button.btn-proloop-checkout:not(:hover) .btnico svg {
+    fill: #000000;
 }

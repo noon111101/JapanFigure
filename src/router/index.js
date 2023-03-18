@@ -28,7 +28,7 @@ import Checkout from "../views/Presentation/Components/Sales/Checkout.vue";
 import NonOrder from "../views/LandingPages/Products/nonOrder/nonOrder.vue";
 import Order from "../views/LandingPages/Products/Order/Order.vue";
 import Detail from "../views/LandingPages/Products/Detail/Detail.vue";
-import collection from "@/views/LandingPages/Products/Detail/Collection/collection.vue";
+import collection from "@/views/LandingPages/Products/Collection/collection.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
