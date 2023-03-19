@@ -83,12 +83,12 @@ export default {
           <div class="col-md-6">
             <RouterLink
               :to="{ name: 'Order' }"
-              class="dropdown-item border-radius-md"
+              class="dropdown-item border-radius-md groupbanner-hover"
             >
               <img
                 src="https://theme.hstatic.net/1000160337/1000885200/14/home_collection_1_banner.jpg?v=298"
                 alt=""
-                class="w-100 h-100"
+                class="w-100 h-100 lazyloaded"
               />
             </RouterLink>
           </div>
