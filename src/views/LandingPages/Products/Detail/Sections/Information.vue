@@ -55,16 +55,7 @@
         Chat ngay
       </div>
       <div
-        class="col-4 text"
-        style="
-          margin-left: 5%;
-          background-color: #ff0000;
-          padding-top: 2%;
-          color: white;
-          text-align: center;
-          font-size: 15px;
-          font-weight: 500;
-        "
+        class="col-4 text button-effect"
       >
         THÊM VÀO GIỎ HÀNG
       </div>
@@ -121,7 +112,7 @@
               data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_3_ico.png?v=299"
               src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_3_ico.png?v=299"
               alt="Giao hàng tận nơi
- Miễn phí ship với các đơn hàng >1000K 
+ Miễn phí ship với các đơn hàng >1000K
  Vui lòng kiểm tra sản phẩm khi nhận bưu kiện"
             />
           </span>
@@ -290,7 +281,7 @@ export default {
       } else {
         document.getElementById("info1").classList.add("open");
         document.getElementById("info1").classList.remove("closs");
-      } 
+      }
       if (document.getElementById("info-title").classList.contains("def")) {
         document.getElementById("info-title").classList.remove("def");
         document.getElementById("info-title").classList.add("strong");
@@ -351,9 +342,61 @@ export default {
   border-width: 1px;
 }
 .def{
- font-weight: 600;  
+ font-weight: 600;
 }
 .strong{
   font-weight: 300;
 }
+.button-effect{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  overflow: hidden;
+  padding: 12px 28px;
+  line-height: normal;
+  margin-left: 5%;
+  color: #fff;
+  padding-top: 2%;
+  background-color: #fff;
+  border: 1px solid #ed1c24;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button-effect:before {
+  content: '';
+  display: block;
+  background-color: #ed1c24;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button-effect:hover{
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+.button-effect:hover:before{
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
 </style>
