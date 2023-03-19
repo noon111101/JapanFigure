@@ -81,20 +81,18 @@ export default {
       <div class="card p-3">
         <div class="row">
           <div class="col-md-6">
-            <RouterLink :to="{ name: 'Order' }" class="dropdown-item border-radius-md">
+            <RouterLink :to="{ name: 'Order' }" class="dropdown-item border-radius-md groupbanner-hover">
               <img src="https://theme.hstatic.net/1000160337/1000885200/14/home_collection_1_banner.jpg?v=298" alt=""
-                class="w-100 h-100" />
+                class="w-100 h-100 lazyloaded" />
             </RouterLink>
-
-
           </div>
           <div class="col-md-6">
             <div class="row mb-4">
               <div class="col-md-4" v-for="(item, index) in response" :key="index">
-                <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
+                <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md ">
                   <img
                     src="https://product.hstatic.net/1000160337/product/nendoroid_saint_tail__1__d143ab1502bf4b3a8af312a18a61c43e_medium.jpg"
-                    class="card-img-top" alt="..." />
+                    class="card-img-top  " alt="..." />
                   <div class="card-body">
                     <p class="card-text">
                       {{ item.figure }}
@@ -116,3 +114,6 @@ export default {
     </div>
   </section>
 </template>
+<style scoped>
+
+</style>

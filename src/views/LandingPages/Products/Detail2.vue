@@ -56,6 +56,7 @@
       </b-row>
       <div style="margin-top: 20px"><hr /></div>
     </b-row>
+
   </div>
 </template>
 

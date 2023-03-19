@@ -72,22 +72,16 @@
                 <span class="icon-control float-end"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
             </div>
             <template #dropdown>
-              <div  class="dropdownitem">
-                <ul class="item-sort">Square Enix</ul>
-                <ul class="item-sort">Capcom</ul>
-                <ul class="item-sort">Daiki kogyo</ul>
-                <ul class="item-sort">Sentinel</ul>
-                <ul class="item-sort">Cospa</ul>
-                <ul class="item-sort">FREEing</ul>
-                <ul class="item-sort">Aspire</ul>
-                <ul class="item-sort">Good Smile Company Shanghai</ul>
-                <ul class="item-sort">Plex</ul>
-                <ul class="item-sort">NetEase Games</ul>
-                <ul class="item-sort">Toy's Works</ul>
-                <ul class="item-sort">Play Future</ul>
-                <ul class="item-sort">Hot Toys</ul>
-                <ul class="item-sort">Hobby Max</ul>
-                <ul class="item-sort">Tomytec</ul>
+              <div  class="dropdownitem d-flex flex-column">
+                <el-checkbox class="item-sort" label="Square Enix" size="default" />
+                <el-checkbox class="item-sort" label="Capcom" size="default" />
+                <el-checkbox class="item-sort" label="Daiki kogyo" size="default" />
+                <el-checkbox class="item-sort"  label="Sentinel" size="default" />
+                <el-checkbox class="item-sort"  label="Cospa" size="default" />
+                <el-checkbox class="item-sort" label="FREEing" size="default" />
+                <el-checkbox class="item-sort"  label="Aspire" size="default" />
+                <el-checkbox class="item-sort" label="Toy's Works" size="default" />
+                <el-checkbox class="item-sort"  label="Play Future" size="default" />
               </div>
             </template>
           </el-dropdown>
@@ -100,12 +94,12 @@
                 <span class="icon-control float-end"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
             </div>
             <template #dropdown>
-              <div  class="dropdownitem">
-                <ul class="item-sort">Dưới 1.000.000₫</ul>
-                <ul class="item-sort">1.000.000₫ - 2.000.000₫</ul>
-                <ul class="item-sort">2.000.000₫ - 3.000.000₫</ul>
-                <ul class="item-sort">3.000.000₫ - 4.000.000₫</ul>
-                <ul class="item-sort">Trên 4.000.000₫</ul>
+              <div  class="dropdownitem d-flex flex-column">
+                <el-checkbox class="item-sort" label="Dưới 1.000.000₫" size="default" />
+                <el-checkbox class="item-sort" label="1.000.000₫ - 2.000.000₫" size="default" />
+                <el-checkbox class="item-sort" label="2.000.000₫ - 3.000.000₫" size="default" />
+                <el-checkbox class="item-sort" label="3.000.000₫ - 4.000.000₫" size="default" />
+                <el-checkbox class="item-sort" label="Trên 4.000.000₫" size="default" />
               </div>
             </template>
           </el-dropdown>
@@ -118,16 +112,16 @@
                 <span class="icon-control float-end"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
             </div>
             <template #dropdown>
-              <div  class="dropdownitem">
-                <ul class="item-sort">1/12</ul>
-                <ul class="item-sort">1/10</ul>
-                <ul class="item-sort">1/8</ul>
-                <ul class="item-sort">1/7</ul>
-                <ul class="item-sort">1/6</ul>
-                <ul class="item-sort">1/5</ul>
-                <ul class="item-sort">1/4</ul>
-                <ul class="item-sort">1/3</ul>
-                <ul class="item-sort">non-scale</ul>
+              <div class="dropdownitem d-flex flex-column">
+                <el-checkbox class="item-sort" label="1/12" size="default" />
+                <el-checkbox class="item-sort" label="1/10" size="default" />
+                <el-checkbox class="item-sort" label="1/8" size="default" />
+                <el-checkbox class="item-sort" label="1/7" size="default" />
+                <el-checkbox class="item-sort" label="1/6" size="default" />
+                <el-checkbox class="item-sort" label="1/5" size="default" />
+                <el-checkbox class="item-sort" label="1/4" size="default" />
+                <el-checkbox class="item-sort" label="1/3" size="default" />
+                <el-checkbox class="item-sort" label="non-scale" size="default" />
               </div>
             </template>
           </el-dropdown>
@@ -284,19 +278,47 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="d-flex flex-column w-100 text-center mt-5">
+        <h3>Follow Japan Figure on Instagram</h3>
+        <p>@Japanfigure.vn</p>
+        <div class="row">
+          <div class="col-md-2 p-0">
+            <img src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_1_img.jpg?v=298" alt="" class="w-100 h-auto">
+          </div>
+          <div class="col-md-2 p-0 ">
+            <img src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_2_img.jpg?v=298" alt="" class="w-100 h-auto">
+          </div>
+          <div class="col-md-2 p-0">
+            <img src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_3_img.jpg?v=298" alt="" class="w-100 h-auto">
+          </div>
+          <div class="col-md-2 p-0">
+            <img src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_4_img.jpg?v=298" alt="" class="w-100 h-auto">
+          </div>
+          <div class="col-md-2 p-0">
+            <img src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_5_img.jpg?v=298" alt="" class="w-100 h-auto">
+          </div>
+          <div class="col-md-2 p-0">
+            <img src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_6_img.jpg?v=298" alt="" class="w-100 h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+    <FooterDefault />
   </div>
 </template>
 
 <script>
 import NavbarDefault from "@/examples/navbars/NavbarDefault.vue";
-
+import FooterDefault from "@/examples/footers/FooterDefault.vue";
 export default {
   name: "collection",
-  components: { NavbarDefault },
+  components: { FooterDefault, NavbarDefault },
   data() {
     return {
       type: null,
       sort: 10,
+      checked1:''
     };
   },
   methods: {
@@ -318,4 +340,5 @@ export default {
 
 <style scoped>
 @import "../../../../assets/css/collection.css";
+
 </style>

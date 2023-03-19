@@ -48,10 +48,10 @@ export default {
           <div class="col-md-6">
             <div class="row mb-4">
               <div class="col-md-4" v-for="(item, index) in response" :key="index">
-                <div class="card">
+                <div class="card ">
                   <img
                     src="https://product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_master.jpg"
-                    class="card-img-top" alt="..." />
+                    class="card-img-top " alt="..." />
 
                   <div class="card-body">
                     <p class="card-text">{{ item.figure }}</p>
@@ -66,9 +66,9 @@ export default {
             </div>
           </div>
           <div class="col-md-6">
-            <RouterLink :to="{ name: 'nonOrder' }" class="dropdown-item border-radius-md">
+            <RouterLink :to="{ name: 'nonOrder' }" class="dropdown-item border-radius-md groupbanner-hover">
               <img src="https://theme.hstatic.net/1000160337/1000885200/14/home_collection_2_banner.jpg?v=298" alt=""
-                class="w-100 h-100" />
+                class="w-100 h-100 lazyloaded" />
             </RouterLink>
           </div>
         </div>
