@@ -1,4 +1,5 @@
 <style scoped>
+
 img {
   width: 100%;
   height: 100%;
@@ -7,7 +8,7 @@ img {
 <script>
 import axios from 'axios';
 import { RouterLink } from "vue-router";
-
+import PresentationProductsAvailable from './PresentationProductsAvailable.vue';
 // images
 
 export default {
@@ -27,7 +28,7 @@ export default {
   created: function () {
     this.showAll()
   },
-  components: { RouterLink },
+  components: { RouterLink, PresentationProductsAvailable },
 };
 </script>
 <template>
@@ -46,24 +47,7 @@ export default {
       <div class=" p-3">
         <div class="row">
           <div class="col-md-6">
-            <div class="row mb-4">
-              <div class="col-md-4" v-for="(item, index) in response" :key="index">
-                <div class="card ">
-                  <img
-                    src="https://product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_master.jpg"
-                    class="card-img-top " alt="..." />
-
-                  <div class="card-body">
-                    <p class="card-text">{{ item.figure }}</p>
-                    <h5 class="card-title">{{ item.price }}đ</h5>
-                    <p class="card-text">
-                      <button type="button" class="btn btn-dark">Go somewhere</button>
-                    </p>
-                    <a href="#" class="btn btn-primary d-none">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <PresentationProductsAvailable/>
           </div>
           <div class="col-md-6">
             <RouterLink :to="{ name: 'nonOrder' }" class="dropdown-item border-radius-md groupbanner-hover">

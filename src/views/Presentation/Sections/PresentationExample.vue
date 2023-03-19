@@ -78,9 +78,22 @@ export default {
       </div>
     </div>
     <div class="container mt-sm-3 mt-3">
-      <div class=" p-3">
+      <div class="p-3">
         <div class="row">
           <div class="col-md-6">
+            <RouterLink
+              :to="{ name: 'Order' }"
+              class="dropdown-item border-radius-md"
+            >
+              <img
+                src="https://theme.hstatic.net/1000160337/1000885200/14/home_collection_1_banner.jpg?v=298"
+                alt=""
+                class="w-100 h-100"
+              />
+            </RouterLink>
+          </div>
+          <div class="col-md-6">
+            <PresentationProductsNew />
             <RouterLink :to="{ name: 'Order' }" class="dropdown-item border-radius-md groupbanner-hover">
               <img src="https://theme.hstatic.net/1000160337/1000885200/14/home_collection_1_banner.jpg?v=298" alt=""
                 class="w-100 h-100 lazyloaded" />
@@ -114,6 +127,3 @@ export default {
     </div>
   </section>
 </template>
-<style scoped>
-
-</style>

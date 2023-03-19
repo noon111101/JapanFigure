@@ -16,7 +16,8 @@ import data from "./Sections/Data/designBlocksData";
 import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 // import PresentationInformation from "./Sections/PresentationInformation.vue";
-
+import PersentationScaleFigure from "./Sections/PersentationScaleFigure.vue";
+import PersentationFooter from "./Sections/PersentationFooter.vue"
 //images
 import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
 
@@ -40,7 +41,7 @@ onUnmounted(() => {
       </div>
     </div>
   </div>
-  <Header>
+  <Header style="z-index: 5;">
     <div
       class="page-header min-vh-75"
       :style="`background-image: url(${vueMkHeader})`"
@@ -64,61 +65,66 @@ onUnmounted(() => {
       </div>
     </div>
   </Header>
-
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 p-0">
+  <div style="background-color: white;">
     <PresentationCounter />
+    <br>
+    <br>
     <PresentationInformation />
     <PresentationExample :data="data" />
     <PresentationPages />
     <BuiltByDevelopers />
+    <PersentationScaleFigure/>
+    <PersentationFooter/>
+    <br>
     <PresentationTestimonials />
-    <div class="row">
-      <div class="d-flex flex-column w-100 text-center mt-5">
-        <h3>Follow Japan Figure on Instagram</h3>
-        <p>@Japanfigure.vn</p>
-        <div class="row">
-          <div class="col-md-2 p-0">
-            <img
-              src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_1_img.jpg?v=298"
-              alt=""
-              class="w-100 h-auto"
-            />
-          </div>
-          <div class="col-md-2 p-0">
-            <img
-              src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_2_img.jpg?v=298"
-              alt=""
-              class="w-100 h-auto"
-            />
-          </div>
-          <div class="col-md-2 p-0">
-            <img
-              src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_3_img.jpg?v=298"
-              alt=""
-              class="w-100 h-auto"
-            />
-          </div>
-          <div class="col-md-2 p-0">
-            <img
-              src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_4_img.jpg?v=298"
-              alt=""
-              class="w-100 h-auto"
-            />
-          </div>
-          <div class="col-md-2 p-0">
-            <img
-              src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_5_img.jpg?v=298"
-              alt=""
-              class="w-100 h-auto"
-            />
-          </div>
-          <div class="col-md-2 p-0">
-            <img
-              src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_6_img.jpg?v=298"
-              alt=""
-              class="w-100 h-auto"
-            />
-          </div>
+  </div>
+
+  <div class="row">
+    <div class="d-flex flex-column w-100 text-center mt-5">
+      <h3>Follow Japan Figure on Instagram</h3>
+      <p>@Japanfigure.vn</p>
+      <div class="row">
+        <div class="col-md-2 p-0">
+          <img
+            src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_1_img.jpg?v=298"
+            alt=""
+            class="w-100 h-auto"
+          />
+        </div>
+        <div class="col-md-2 p-0">
+          <img
+            src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_2_img.jpg?v=298"
+            alt=""
+            class="w-100 h-auto"
+          />
+        </div>
+        <div class="col-md-2 p-0">
+          <img
+            src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_3_img.jpg?v=298"
+            alt=""
+            class="w-100 h-auto"
+          />
+        </div>
+        <div class="col-md-2 p-0">
+          <img
+            src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_4_img.jpg?v=298"
+            alt=""
+            class="w-100 h-auto"
+          />
+        </div>
+        <div class="col-md-2 p-0">
+          <img
+            src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_5_img.jpg?v=298"
+            alt=""
+            class="w-100 h-auto"
+          />
+        </div>
+        <div class="col-md-2 p-0">
+          <img
+            src="https://theme.hstatic.net/1000160337/1000885200/14/gallery_item_6_img.jpg?v=298"
+            alt=""
+            class="w-100 h-auto"
+          />
         </div>
       </div>
     </div>
