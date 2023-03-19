@@ -2,14 +2,13 @@
   <div>
     <div class="collection-listproduct" id="collection-body">
       <div class="container">
-        <h3 style="text-align: center; margin-top: 5%; margin-bottom: 4%;">Sản phâm liên quan</h3>
         <div class="wraplist-collection">
           <div
             class="row listProduct-row listProduct-resize listProduct-filter"
           >
             <div
-              class="col-md-3 col-sm-4 col-xs-6 product-loop"
-              v-for="n in 4"
+              class="col-md-6 col-sm-6 col-xs-12 product-loop"
+              v-for="n in 2"
               :key="n"
             >
               <div class="product-inner" style="height: 420px">
@@ -166,8 +165,8 @@ export default {
   methods: {
     handleClickSort(sort) {
       this.sort = sort;
-      console.log(this.sort)
-    }
+      console.log(this.sort);
+    },
   },
   updated() {
     this.type = this.$route.params.type;
@@ -176,10 +175,10 @@ export default {
   mounted() {
     this.type = this.$route.params.type;
     console.log(this.type);
-  }
+  },
 };
 </script>
 
 <style scoped>
-@import "../../../../../assets/css/collection.css";
+@import "../../../assets/css/collection.css";
 </style>

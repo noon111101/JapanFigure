@@ -12,8 +12,12 @@ import bg0 from "@/assets/img/bg9.jpg";
 import Typed from "typed.js";
 
 //sections
-import Information from "./Sections/AboutInformation.vue";
+// import Information from "./Sections/AboutInformation.vue";
 import AboutTeam from "./Sections/AboutTeam.vue";
+import Information from "./Sections/Information.vue";
+import Slideshow from "./Sections/Slideshow.vue";
+
+
 
 const body = document.getElementsByTagName("body")[0];
 //hooks
@@ -92,9 +96,14 @@ onUnmounted(() => {
       </div>
     </div>
   </header>
-  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
-    <Information />
-    <AboutTeam />
+  <div class="row">
+    <div class="col-6">
+      <Slideshow/>
+    </div>
+    <div class="col-6">
+      <Information/>
+    </div>
   </div>
+  <AboutTeam/>
   <DefaultFooter />
 </template>
