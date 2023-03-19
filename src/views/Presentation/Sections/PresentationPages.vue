@@ -43,7 +43,7 @@ export default {
       </div>
     </div>
     <div class="container mt-2">
-      <div class="card p-3">
+      <div class=" p-3">
         <div class="row">
           <div class="col-md-6">
             <div class="row mb-4">

@@ -78,7 +78,7 @@ export default {
       </div>
     </div>
     <div class="container mt-sm-3 mt-3">
-      <div class="card p-3">
+      <div class=" p-3">
         <div class="row">
           <div class="col-md-6">
             <RouterLink :to="{ name: 'Order' }" class="dropdown-item border-radius-md groupbanner-hover">
