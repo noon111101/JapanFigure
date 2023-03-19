@@ -73,7 +73,6 @@
             </div>
             <template #dropdown>
               <div  class="dropdownitem">
-                <ul class="item-sort">MegaHouse_Kakashi Hatake</ul>
                 <ul class="item-sort">Square Enix</ul>
                 <ul class="item-sort">Capcom</ul>
                 <ul class="item-sort">Daiki kogyo</ul>
@@ -290,7 +289,6 @@
 
 <script>
 import NavbarDefault from "@/examples/navbars/NavbarDefault.vue";
-import { ref } from "vue";
 
 export default {
   name: "collection",

@@ -29,6 +29,7 @@ import NonOrder from "../views/LandingPages/Products/nonOrder/nonOrder.vue";
 import Order from "../views/LandingPages/Products/Order/Order.vue";
 import Detail from "../views/LandingPages/Products/Detail/Detail.vue";
 import collection from "@/views/LandingPages/Products/Collection/collection.vue";
+import Detail2 from "@/views/LandingPages/Products/Detail2.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -182,6 +183,11 @@ const router = createRouter({
       path: "/collections/:type",
       name: "collection",
       component: collection,
+    },
+    {
+      path: "/products/detail2",
+      name: "detail2",
+      component: Detail2,
     }
   ],
 });
