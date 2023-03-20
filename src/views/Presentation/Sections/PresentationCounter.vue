@@ -19,9 +19,12 @@
                       thoả sức tạo dáng
                     </p>
                     <p class="card-text">
+                      <a href="/collections/chibi-figure">
                       <button type="button" class=" button-effect-home">
                         XEM NGAY >
+
                       </button>
+                      </a>
                     </p>
                   </div>
                   <div class="img">
@@ -46,9 +49,11 @@
                       thoả sức tạo dáng
                     </p>
                     <p class="card-text">
+                      <a href="/collections/pop-up-parade">
                       <button type="button " class=" button-effect-home">
                         XEM NGAY >
                       </button>
+                      </a>
                     </p>
                   </div>
                   <div class="img">
@@ -177,5 +182,9 @@
   transform-origin: right center;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
+}
+a{
+  text-decoration: none !important;
+  outline: none !important;
 }
 </style>
