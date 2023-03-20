@@ -60,7 +60,7 @@
     <b-navbar-brand>
       <div class="dropdown">
         <button class="dropbtn">
-          <a href="">Sản phẩm</a>
+          <a href="http://127.0.0.1:5173/collections/hang-co-san">Sản phẩm</a>
         </button>
         <div class="dropdown-content">
           <a href="http://127.0.0.1:5173/collections/hang-co-san">Hàng có sẵn</a>

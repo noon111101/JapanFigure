@@ -17,8 +17,6 @@ import AboutTeam from "./Sections/AboutTeam.vue";
 import Information from "./Sections/Information.vue";
 import Slideshow from "./Sections/Slideshow.vue";
 
-
-
 const body = document.getElementsByTagName("body")[0];
 //hooks
 onMounted(() => {
@@ -96,14 +94,31 @@ onUnmounted(() => {
       </div>
     </div>
   </header>
+  <div class="container">
+    <navbar-default />
+    <el-breadcrumb
+      class="mt-3 mb-3"
+      style="background: transparent; margin-left: -11%"
+      separator="/"
+    >
+      <el-breadcrumb-item :to="{ path: '/' }">Trang chủ</el-breadcrumb-item>
+      <el-breadcrumb-item :to="{ path: '/collections/all' }"
+        >Hàng có sẵn</el-breadcrumb-item
+      >
+      <el-breadcrumb-item>
+        3One and Only " SLAM DUNK " Hanamichi Sakuragi
+      </el-breadcrumb-item>
+      <el-breadcrumb-item>{{ type }}</el-breadcrumb-item>
+    </el-breadcrumb>
+  </div>
   <div class="row">
     <div class="col-6">
-      <Slideshow/>
+      <Slideshow />
     </div>
     <div class="col-6">
-      <Information/>
+      <Information />
     </div>
   </div>
-    <AboutTeam/>
+  <AboutTeam />
   <DefaultFooter />
 </template>

@@ -8,12 +8,12 @@
           >
             <div
               class="col-md-6 col-sm-6 col-xs-12 product-loop"
-              v-for="n in 2"
+              v-for="n in 4"
               :key="n"
             >
-              <div class="product-inner" style="height: 420px">
+              <div class="product-inner" style="height: 350px">
                 <div class="proloop-image">
-                  <div class="product--image" style="height: 344px">
+                  <div class="product--image" style="height: 250px">
                     <div class="prod-img first-image">
                       <picture>
                         <source

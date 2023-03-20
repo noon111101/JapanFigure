@@ -367,7 +367,6 @@ export default {
   text-align: center;
   letter-spacing: 1px;
   outline: none;
-  border-radius: 10px;
   text-transform: uppercase;
   -webkit-transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
