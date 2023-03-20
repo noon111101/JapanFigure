@@ -74,7 +74,7 @@
 .img {
   position: absolute;
   /* z-index: 2; */
-  top: -115%;
+  top: 0%;
   bottom: 0;
   left: 0%;
   z-index: 0;

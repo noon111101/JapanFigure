@@ -104,6 +104,6 @@ onUnmounted(() => {
       <Information/>
     </div>
   </div>
-  <AboutTeam/>
+    <AboutTeam/>
   <DefaultFooter />
 </template>

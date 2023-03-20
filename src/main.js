@@ -19,6 +19,8 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import materialKit from "./material-kit";
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+
+
 const app = createApp(App);
 app.use(VueViewer)
 app.use(ElementPlus);
@@ -27,3 +29,4 @@ app.use(router);
 app.use(BootstrapVue3)
 app.use(materialKit);
 app.mount("#app");
+app.use(VueViewer)

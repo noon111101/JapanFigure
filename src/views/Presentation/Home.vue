@@ -1,10 +1,12 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
+import { useWindowScroll } from "@vueuse/core";
 
 //example components
 import NavbarDefault from "../../examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
+import Navbar from "../../examples/navbars/navbar.vue";
 
 //Vue Material Kit 2 components
 
@@ -31,10 +33,14 @@ onUnmounted(() => {
   body.classList.remove("presentation-page");
   body.classList.remove("bg-gray-200");
 });
+const { y } = useWindowScroll();
 </script>
 
 <template>
-  <div class="container position-sticky z-index-sticky top-0">
+  <div v-if="y > 9">
+    <Navbar />
+  </div>
+  <div class="container position-sticky z-index-sticky top-0" style="display: none;">
     <div class="row">
       <div class="col-12">
         <NavbarDefault :sticky="true" />
@@ -73,10 +79,12 @@ onUnmounted(() => {
     <PresentationExample :data="data" />
     <PresentationPages />
     <BuiltByDevelopers />
-    <PersentationScaleFigure/>
-    <PersentationFooter/>
     <br>
     <PresentationTestimonials />
+
+    <!-- <PersentationScaleFigure/> -->
+    <PersentationFooter/>
+    <br>
   </div>
 
   <div class="row">

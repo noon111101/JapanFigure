@@ -67,6 +67,7 @@
         </div>
       </div>
     </div>
+    <br>
     <div style="text-align: center">
       <h2><a href="#">Dành cho người mới bắt đầu</a></h2>
       <p class="lead">Hướng dẫn cơ bản</p>

@@ -67,7 +67,7 @@
         <li class="row">
           <span class="col-1">
             <img
-              class="ls-is-cached img"
+              class="ls-is-cached img1"
               data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_1_ico.png?v=299"
               src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_1_ico.png?v=299"
               alt="Sản phẩm chính hãng từ Nhật Bản.
@@ -88,7 +88,7 @@
         <li class="row">
           <span class="col-1">
             <img
-              class="ls-is-cached img"
+              class="ls-is-cached img2"
               data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_2_ico.png?v=299"
               src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_2_ico.png?v=299"
               alt="Với sản phẩm CÓ SẴN, bạn sẽ được giao ngay.
@@ -108,12 +108,9 @@
         <li class="row">
           <span class="col-1">
             <img
-              class="ls-is-cached img"
+              class="ls-is-cached img3"
               data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_3_ico.png?v=299"
               src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_3_ico.png?v=299"
-              alt="Giao hàng tận nơi
- Miễn phí ship với các đơn hàng >1000K
- Vui lòng kiểm tra sản phẩm khi nhận bưu kiện"
             />
           </span>
           <span class="col-11">
@@ -295,12 +292,18 @@ export default {
 </script>
 
 <style>
-.img {
-  vertical-align: middle;
-  border: 0;
-  margin-left: 0;
-  padding-top: 50%;
-  margin-top: 30%;
+.img1 {
+  margin-top: 120%;
+  margin-left: -10%;
+}
+.img2 {
+  margin-top: 120%;
+  margin-left: -10%;
+}
+.img3 {
+  margin-top: 120%;
+  margin-left: -10%;
+
 }
 .product-deliverly .infoList-deliverly li {
   list-style: none;
@@ -342,7 +345,7 @@ export default {
   border-width: 1px;
 }
 .def{
- font-weight: 600;
+ font-weight: 400;
 }
 .strong{
   font-weight: 300;

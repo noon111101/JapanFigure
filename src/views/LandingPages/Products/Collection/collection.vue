@@ -192,9 +192,9 @@
                     </div>
                   </div>
                   <a
-                    href="/products/one-and-only-slam-dunk-hanamichi-sakuragi"
+                    href="http://127.0.0.1:5173/products/detail"
                     class="proloop-link quickview-product"
-                    data-handle="/products/one-and-only-slam-dunk-hanamichi-sakuragi"
+                    data-handle="http://127.0.0.1:5173/products/detail"
                     title="One and Only "
                   ></a>
                 </div>
@@ -203,7 +203,7 @@
                   <h3>
                     <a
                       class="title title-detail"
-                      href="/products/one-and-only-slam-dunk-hanamichi-sakuragi"
+                      href="http://127.0.0.1:5173/products/detail"
                       >One and Only " SLAM DUNK " Hanamichi Sakuragi</a
                     >
                   </h3>
