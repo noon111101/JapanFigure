@@ -74,7 +74,9 @@ const { y } = useWindowScroll();
   <div style="background-color: white;">
     <PresentationCounter />
     <br>
-    <br>
+    <br><br>
+    <br><br>
+    <br><br>
     <PresentationInformation />
     <PresentationExample :data="data" />
     <PresentationPages />
