@@ -60,16 +60,69 @@
     <b-navbar-brand>
       <div class="dropdown">
         <button class="dropbtn">
-          <a href="http://127.0.0.1:5173/collections/hang-co-san">Sản phẩm</a>
+          <a>Sản phẩm</a>
         </button>
         <div class="dropdown-content">
-          <a href="http://127.0.0.1:5173/collections/hang-co-san">Hàng có sẵn</a>
-          <div class="hr"></div>
-          <a href="#">Hàng oder</a>
-          <div class="hr"></div>
-          <a href="#">Scale figure</a>
-          <div class="hr"></div>
-          <a href="#">Pop up parade</a>
+          <RouterLink
+          :to="{ path: '/collections/hang-co-san' }"
+          class="dropdown-item border-radius-md"
+        >
+          <span>Hàng có sẵn</span>
+        </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/hang-order' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Hàng order</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/scale-figure' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Scale figure</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/chibi-figure' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Nendoroid</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/pop-up-parade' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Pop Up Parade</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/action-figure' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Figma</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/r18' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>R18</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/cac-loai-figure-khac' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Các loại figure khác</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/artbook' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Artbook</span>
+          </RouterLink>
+          <RouterLink
+            :to="{ path: '/collections/fidget-spinner' }"
+            class="dropdown-item border-radius-md"
+          >
+            <span>Fidget Spinner</span>
+          </RouterLink>
           <br />
         </div>
       </div>
