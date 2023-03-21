@@ -136,8 +136,8 @@
           >
             <div
               class="col-md-3 col-sm-4 col-xs-6 product-loop"
-              v-for="(product,index) in listProduct"
-              :key="index"
+              v-for="n in 30"
+              :key="n"
             >
               <div class="product-inner" style="height: 420px">
                 <div class="proloop-image">
@@ -147,23 +147,21 @@
                         <source
                           media="(max-width: 480px)"
                           data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_medium.jpg"
-                          :srcset="
-                            product.listImage[0].url
+                          srcset="
+                            //product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_medium.jpg
                           "
                         />
                         <source
                           media="(min-width: 481px)"
                           data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg"
-                          :srcset="
-                            product.listImage[0].url
+                          srcset="
+                            //product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg
                           "
                         />
                         <img
                           class="img-loop lazyloaded"
                           data-src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg"
-                          :src="
-                            product.listImage[0].url
-                          "
+                          src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__2__e74fa9a1ff364a38aa375f30b73819d1_large.jpg"
                           alt=' One and Only " SLAM DUNK " Hanamichi Sakuragi '
                         />
                       </picture>
@@ -173,23 +171,21 @@
                         <source
                           media="(max-width: 480px)"
                           data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_small.jpg"
-                          :srcset="
-                            product.listImage[1].url
+                          srcset="
+                            //product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_small.jpg
                           "
                         />
                         <source
                           media="(min-width: 481px)"
                           data-srcset="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg"
-                          :srcset="
-                            product.listImage[1].url
+                          srcset="
+                            //product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg
                           "
                         />
                         <img
                           class="img-loop lazyloaded"
                           data-src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg"
-                          :src="
-                            product.listImage[1].url
-                          "
+                          src="//product.hstatic.net/1000160337/product/one_and_only__slam_dunk__hanamichi_sakuragi__3__d8e8b1b0bb8549daa87ba49c1d8a405c_large.jpg"
                           alt=' One and Only " SLAM DUNK " Hanamichi Sakuragi '
                         />
                       </picture>
@@ -208,11 +204,11 @@
                     <a
                       class="title title-detail"
                       href="http://127.0.0.1:5173/products/detail"
-                      >{{product.figure}}</a
+                      >One and Only " SLAM DUNK " Hanamichi Sakuragi</a
                     >
                   </h3>
                   <p class="proloop--price">
-                    <span class="price fw-bold title">{{product.price}}</span>
+                    <span class="price fw-bold title">2,100,000₫</span>
                   </p>
                 </div>
 
